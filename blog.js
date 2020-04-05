@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$(".toggle-arrow").click(function () {
-		$(".header").slideToggle('slow');
+		$(".header-primary").slideToggle('slow');
 		$(".main").toggleClass("main-full");
 		$(".side-bar").toggleClass("side-shift");
 		$(".toggle-arrow").toggleClass("arrow-shift");

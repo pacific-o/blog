@@ -15,8 +15,8 @@ html {
 
 body {
 	margin: 0;
-    padding: 0;
-    background-color: var(--light-grey);
+	padding: 0;
+	background-color: var(--light-grey);
 	box-sizing: border-box;
 }
 
@@ -25,14 +25,8 @@ body {
 	margin: auto;
 }
 
-.mai-body {
-	position: relative;
-    min-height: 100vh;
-	transition: all 1s;
-}
-
 .main {
-    width: calc(100% - 460px);
+	width: calc(100% - 460px);
 	float: left;
 	transition: all 1s;
 }
@@ -41,17 +35,17 @@ header {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.header {
+.header-primary {
 	background-color: var(--dark);
 	display: none;
 }
 
-.sub-header {
+.header-secondary {
 	background-color: var(--grey);
 }
 
 .header-nav {
-	padding: 15px 0; 
+	padding: 15px 0;
 }
 
 .header-nav li {
@@ -60,14 +54,14 @@ header {
 	list-style: none;
 }
 
-.header-nav-list li a {
-	text-decoration-line: none;
+.header-primary li a {
+	text-decoration: none;
 	color: var(--primary);
 	font-size: 20px;
 	font-weight: bold;
 }
 
-.header-nav-list li a:hover {
+.header-primary li a:hover {
 	color: var(--hover);
 }
 
@@ -136,7 +130,6 @@ header {
 
 .post-content {
 	max-width: 650px;
-	
 }
 
 .post-content a {
@@ -235,7 +228,7 @@ header {
 	.side-bar {
 		display: none;
 	}
-	.header {
+	.header-primary {
 		display: block;
 	}
 	.header-nav li a {
@@ -254,19 +247,15 @@ header {
 }
 
 @media only screen and (max-width:576px) {
-
 	.header-nav {
 		padding: 10px 0 0 0;
 	}
-
 	.header-nav li {
 		margin: 0 20px 10px 0;
 	}
-
 	.header-nav li a {
 		font-size: 16px;
 	}
-
 	.title h1 {
 		font-size: 32px;
 	}
